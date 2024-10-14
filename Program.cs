@@ -98,7 +98,7 @@ internal class Program
 
     Console.WriteLine("Do you want to roll again? y/n");
 
-    var userInput = Console.ReadKey().KeyChar;
+    char userInput = Console.ReadKey().KeyChar;
 
     Console.WriteLine(userInput);
 
