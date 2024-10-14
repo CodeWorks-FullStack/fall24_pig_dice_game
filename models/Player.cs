@@ -8,10 +8,12 @@ public class Player
     // this.Name = name;
     Name = name;
     Score = 0;
+    DiceRolls = [];
   }
 
   public string Name { get; set; }
 
-  // NOTE unsigned int is positive only
-  public uint Score { get; set; }
+  public int Score { get; set; }
+
+  public List<int> DiceRolls { get; set; }
 }
