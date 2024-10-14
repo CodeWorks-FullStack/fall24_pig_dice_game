@@ -27,6 +27,25 @@ internal class Program
       Player player = Players[i];
       Console.WriteLine($"Player {i + 1} is " + player.Name);
     }
+
+
+    RollDice();
+    RollDice();
+    RollDice();
+    RollDice();
+    RollDice();
+    RollDice();
+    RollDice();
+    RollDice();
+    RollDice();
+    RollDice();
+    RollDice();
+    RollDice();
+    RollDice();
+    RollDice();
+    RollDice();
+    RollDice();
+    RollDice();
   }
 
   static Player AddPlayer()
@@ -37,5 +56,11 @@ internal class Program
 
     Player newPlayer = new Player(playerName);
     return newPlayer;
+  }
+
+  static void RollDice()
+  {
+    int randomNumber = new Random().Next(1, 7);
+    Console.WriteLine(randomNumber);
   }
 }
